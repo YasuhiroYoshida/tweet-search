@@ -1,0 +1,7 @@
+parameters:
+#    acme_tweet.example.class: Acme\TweetBundle\Example
+
+services:
+#    acme_tweet.example:
+#        class: %acme_tweet.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

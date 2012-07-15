@@ -1,0 +1,37 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+
+{% block title %} Tweet Search {% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+td { vertical-align: top; padding: 2px 2px;}
+</style>
+
+<h1>Tweet Search</h1>
+
+<form action="{{ path('AcmeTweetBundle_homepage') }}" method="post" {{ form_enctype(form) }}>
+
+    {{ form_errors(form) }}
+
+    {{ form_row(form.search_word) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" value="Search" />
+
+</form>
+<br />
+
+{% if tweets %}
+<h2>Search results of "{{ form.vars.value.SearchWord }}": </h2><br /><br />
+
+<table>
+{% for tweet in tweets %}
+	<tr><td><img src='{{ tweet.profile_image_url }}'></td><td> <a href="https://twitter.com/{{ tweet.from_user }}">@{{tweet.from_user}} </a></td><td> "{{tweet.text}}" </td></tr>
+{% endfor %}
+</table>
+
+{% endif %}
+
+{% endblock %}

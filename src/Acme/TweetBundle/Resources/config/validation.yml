@@ -1,0 +1,5 @@
+# Acme/TweetBundle/Resources/config/validation.yml
+Acme\TweetBundle\Entity\Tweets:
+    properties:
+        tweets:
+            - NotBlank: ~
