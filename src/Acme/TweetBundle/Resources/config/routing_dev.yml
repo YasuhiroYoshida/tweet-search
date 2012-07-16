@@ -1,0 +1,3 @@
+AcmeTweetBundle_homepage:
+    pattern:  /tweet
+    defaults: { _controller: AcmeTweetBundle:Default:index }

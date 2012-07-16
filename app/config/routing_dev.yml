@@ -12,7 +12,7 @@ _demo:
     prefix:   /demo
 
 AcmeTweetBundle:
-    resource: "@AcmeTweetBundle/Resources/config/routing.yml"
+    resource: "@AcmeTweetBundle/Resources/config/routing_dev.yml"
     prefix:   /
 
 _assetic:

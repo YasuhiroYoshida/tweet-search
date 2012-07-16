@@ -11,9 +11,6 @@
  *
  * 12 March 2012
  */
-// Provide a name space just like any other vendor libraries
-namespace TmhOAuth;
-
 class tmhOAuth {
   const VERSION = 0.621;
 
