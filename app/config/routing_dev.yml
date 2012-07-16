@@ -11,6 +11,10 @@ _demo:
     type:     annotation
     prefix:   /demo
 
+AcmeTweetBundle:
+    resource: "@AcmeTweetBundle/Resources/config/routing.yml"
+    prefix:   /
+
 _assetic:
     resource: .
     type:     assetic
