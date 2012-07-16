@@ -40,8 +40,3 @@ AnnotationRegistry::registerLoader(function($class) use ($loader) {
 AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
 
 require __DIR__.'/../vendor/swiftmailer/lib/swift_required.php';
-
-// For Twitter API
-//require __DIR__.'/../vendor/tmhOAuth/tmhOAuth.php';
-
-//set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__.'/../vendor/tmhOAuth');

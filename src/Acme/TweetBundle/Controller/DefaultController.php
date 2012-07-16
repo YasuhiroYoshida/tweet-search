@@ -32,13 +32,13 @@ class DefaultController extends Controller
 
   		    if ($form->isValid()) {
   		    	// Obtain access to an OAuth 1.0A library written by @themattharris
-            require $this->container->get('kernel')->getRootdir() 
-                  . "/../vendor/tmhOAuth/tmhOAuth.php";
+            require_once $this->container->get('kernel')->getRootdir() 
+                . "/../vendor/tmhOAuth/tmhOAuth.php";
 
   		    	// Send a query upon successful authentication 
   		    	$twitter = new tmhOAuth(array("host" => "search.twitter.com"));
   		    	$twitter->request("GET", $twitter->url("search"), 
-  		    				array("q" => $form->get('search_word')->getData(),));
+  		    			array("q" => $form->get('search_word')->getData(),));
   		    	
   		    	// Receive + decode results from Twitter 
   		    	$results = json_decode($twitter->response["response"])->{"results"};
