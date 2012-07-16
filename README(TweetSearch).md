@@ -12,4 +12,8 @@ The next step hasn't been decide. I might add something for security, or I might
 Symfony2 comes with a demo application which is, in this repo, is located under `tweet-search/src/Acme/DemoBundle`. I copied and directly overwrote it in order to create my own application under `tweet-search/src/Acme/TweetBundle`. There is a chance some unnecessary files and configuration are still existing in `TweetBundle`. I will take care of them as I find time to do it.
 
 Also, I will get it up and running on a PaaS shortly.
-2012/07/15 
+2012/07/15
+
+It's up on the web.
+http://tweet-search.phpfogapp.com/web/app_dev.php/tweet
+2012/07/16
