@@ -1,3 +1,4 @@
+# app/config/routing_dev.yml 
 _welcome:
     pattern:  /
     defaults: { _controller: AcmeDemoBundle:Welcome:index }

@@ -1,3 +1,4 @@
+# src/Acme/TweetBundle/Resources/config/routing_dev.yml
 AcmeTweetBundle_homepage:
     pattern:  /tweet
     defaults: { _controller: AcmeTweetBundle:Default:index }
