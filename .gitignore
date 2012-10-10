@@ -1,41 +1,16 @@
-####### For github #######
+####### For PHP Fog #######
 /gitignores/
 
 *.DS_Store
 
-/web/bundles/
+#/web/bundles/
 
 /app/bootstrap*
 /app/cache/*
 /app/logs/*
 
-/vendor/assetic
-/vendor/bundles
-/vendor/doctrine
-/vendor/doctrine-common
-/vendor/doctrine-dbal
-/vendor/metadata
-/vendor/monolog
-/vendor/swiftmailer
-/vendor/symfony
-/vendor/tmhOAuth/examples
-/vendor/twig
-/vendor/twig-extensions
+#/vendor/
 
 /app/config/parameters.ini
-
-/src/Acme/DemoBundle/Tests
-/src/Acme/TweetBundle/Tests
-#/vendor/bundles/JMS/SecurityExtraBundle/Tests
-#/vendor/bundles/Sensio/Bundle/FrameworkExtraBundle/Tests
-#/vendor/bundles/Sensio/Bundle/GeneratorBundle/Tests
-#/vendor/bundles/Symfony/Bundle/AsseticBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/DoctrineBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/FrameworkBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/MonologBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/SecurityBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/SwiftmailerBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/TwigBundle/Tests
-#/vendor/symfony/src/Symfony/Bundle/WebProfilerBundle/Tests
 
 #
