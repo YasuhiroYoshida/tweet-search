@@ -6,14 +6,10 @@
 #/web/bundles/
 
 /app/bootstrap*
-/app/cache/*
+#/app/cache/*
 /app/logs/*
 
 #/vendor/
 
 /app/config/parameters.ini
 
-<<<<<<< HEAD
-#
-=======
->>>>>>> 030fd9b25d7c14a38e18e7c5a10f9da2fb916d44
