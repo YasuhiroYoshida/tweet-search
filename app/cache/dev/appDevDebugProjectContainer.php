@@ -2427,9 +2427,9 @@ class appDevDebugProjectContainer extends Container
             'assetic.read_from' => '/usr/htdocs/tweet-search/app/../web',
             'assetic.write_to' => '/usr/htdocs/tweet-search/app/../web',
             'assetic.java.bin' => '/usr/bin/java',
-            'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/usr/bin/ruby',
-            'assetic.sass.bin' => '/usr/bin/sass',
+            'assetic.node.bin' => '/usr/local/bin/node',
+            'assetic.ruby.bin' => '/Users/yasuhiro/.rvm/rubies/ruby-1.9.3-p194/bin/ruby',
+            'assetic.sass.bin' => '/Users/yasuhiro/.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
 
