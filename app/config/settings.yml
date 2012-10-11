@@ -1,0 +1,7 @@
+prod:
+ .settings:
+    error_reporting:  257
+
+dev:
+  .settings:
+    error_reporting:  257
