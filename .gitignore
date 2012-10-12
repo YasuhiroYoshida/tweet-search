@@ -6,7 +6,7 @@
 #/web/bundles/
 
 /app/bootstrap*
-/app/cache/*
+/app/cache/dev/*
 /app/logs/*
 
 /vendor/assetic
