@@ -12,6 +12,7 @@ class __TwigTemplate_238f80653b17a7ee112c279ee017ebf6 extends Twig_Template
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'content' => array($this, 'block_content'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -104,17 +105,47 @@ td { vertical-align: top; padding: 2px 2px;}
 ";
         }
         // line 36
-        echo "
+        echo "<script type=\"text/javascript\" src=\"Acme/TweetBundle{/Resources/public/js/jquery-1.8.2.min.js\"></script>
 <script type=\"text/javascript\" src=\"";
         // line 37
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmetweet/js/jquery-1.8.2.min.js"), "html", null, true);
-        echo "\"></script>
-<script type=\"text/javascript\" src=\"";
-        // line 38
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmetweet/js/original-scripts.js"), "html", null, true);
         echo "\"></script>
 
 ";
+        // line 39
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 43
+        echo "
+";
+    }
+
+    // line 39
+    public function block_javascripts($context, array $blocks = array())
+    {
+        // line 40
+        echo "    ";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "da8c7ee_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_da8c7ee_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/da8c7ee_jquery-1.8.2.min_1.js");
+            echo "    ";
+        } else {
+            // asset "da8c7ee"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_da8c7ee") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/da8c7ee.js");
+            echo "    ";
+        }
+        unset($context["asset_url"]);
+        // line 41
+        echo "    ";
+        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
+            // asset "e8e0c7f_0"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e8e0c7f_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/e8e0c7f_original-scripts_1.js");
+            echo "    ";
+        } else {
+            // asset "e8e0c7f"
+            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e8e0c7f") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/e8e0c7f.js");
+            echo "    ";
+        }
+        unset($context["asset_url"]);
     }
 
     public function getTemplateName()
@@ -129,6 +160,6 @@ td { vertical-align: top; padding: 2px 2px;}
 
     public function getDebugInfo()
     {
-        return array (  112 => 38,  108 => 37,  105 => 36,  100 => 33,  85 => 31,  81 => 30,  74 => 27,  72 => 26,  62 => 19,  57 => 17,  52 => 15,  45 => 13,  36 => 6,  33 => 5,  27 => 3,);
+        return array (  136 => 41,  124 => 40,  121 => 39,  116 => 43,  114 => 39,  109 => 37,  106 => 36,  101 => 33,  86 => 31,  82 => 30,  75 => 27,  73 => 26,  63 => 19,  58 => 17,  53 => 15,  46 => 13,  37 => 6,  34 => 5,  28 => 3,);
     }
 }

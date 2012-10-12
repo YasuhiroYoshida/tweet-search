@@ -33,9 +33,13 @@ td { vertical-align: top; padding: 2px 2px;}
 </table>
 
 {% endif %}
-
-<script type="text/javascript" src="{{ asset('bundles/acmetweet/js/jquery-1.8.2.min.js') }}"></script>
+<script type="text/javascript" src="Acme/TweetBundle{/Resources/public/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="{{ asset('bundles/acmetweet/js/original-scripts.js') }}"></script>
+
+{% block javascripts %}
+    {% javascripts '@AcmeTweetBundle/Resources/public/js/jquery-1.8.2.min.js'%}    {% endjavascripts %}
+    {% javascripts '@AcmeTweetBundle/Resources/public/js/original-scripts.js'%}    {% endjavascripts %}
+{% endblock %}
 
 {% endblock %}
 
