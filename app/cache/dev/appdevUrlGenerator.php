@@ -24,10 +24,6 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        '_demo_hello' => true,
        '_demo_contact' => true,
        'AcmeTweetBundle_homepage' => true,
-       '_assetic_da8c7ee' => true,
-       '_assetic_da8c7ee_0' => true,
-       '_assetic_e8e0c7f' => true,
-       '_assetic_e8e0c7f_0' => true,
        '_wdt' => true,
        '_profiler_search' => true,
        '_profiler_purge' => true,
@@ -114,26 +110,6 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function getAcmeTweetBundle_homepageRouteInfo()
     {
         return array(array (), array (  '_controller' => 'Acme\\TweetBundle\\Controller\\DefaultController::indexAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/tweet',  ),));
-    }
-
-    private function get_assetic_da8c7eeRouteInfo()
-    {
-        return array(array (), array (  '_controller' => 'assetic.controller:render',  'name' => 'da8c7ee',  'pos' => NULL,  '_format' => 'js',), array (), array (  0 =>   array (    0 => 'text',    1 => '/js/da8c7ee.js',  ),));
-    }
-
-    private function get_assetic_da8c7ee_0RouteInfo()
-    {
-        return array(array (), array (  '_controller' => 'assetic.controller:render',  'name' => 'da8c7ee',  'pos' => 0,  '_format' => 'js',), array (), array (  0 =>   array (    0 => 'text',    1 => '/js/da8c7ee_jquery-1.8.2.min_1.js',  ),));
-    }
-
-    private function get_assetic_e8e0c7fRouteInfo()
-    {
-        return array(array (), array (  '_controller' => 'assetic.controller:render',  'name' => 'e8e0c7f',  'pos' => NULL,  '_format' => 'js',), array (), array (  0 =>   array (    0 => 'text',    1 => '/js/e8e0c7f.js',  ),));
-    }
-
-    private function get_assetic_e8e0c7f_0RouteInfo()
-    {
-        return array(array (), array (  '_controller' => 'assetic.controller:render',  'name' => 'e8e0c7f',  'pos' => 0,  '_format' => 'js',), array (), array (  0 =>   array (    0 => 'text',    1 => '/js/e8e0c7f_original-scripts_1.js',  ),));
     }
 
     private function get_wdtRouteInfo()

@@ -12,7 +12,6 @@ class __TwigTemplate_238f80653b17a7ee112c279ee017ebf6 extends Twig_Template
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'content' => array($this, 'block_content'),
-            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -105,47 +104,17 @@ td { vertical-align: top; padding: 2px 2px;}
 ";
         }
         // line 36
-        echo "<script type=\"text/javascript\" src=\"Acme/TweetBundle{/Resources/public/js/jquery-1.8.2.min.js\"></script>
+        echo "
 <script type=\"text/javascript\" src=\"";
         // line 37
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmetweet/js/jquery-1.8.2.min.js"), "html", null, true);
+        echo "\"></script>
+<script type=\"text/javascript\" src=\"";
+        // line 38
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/acmetweet/js/original-scripts.js"), "html", null, true);
         echo "\"></script>
 
 ";
-        // line 39
-        $this->displayBlock('javascripts', $context, $blocks);
-        // line 43
-        echo "
-";
-    }
-
-    // line 39
-    public function block_javascripts($context, array $blocks = array())
-    {
-        // line 40
-        echo "    ";
-        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
-            // asset "da8c7ee_0"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_da8c7ee_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/da8c7ee_jquery-1.8.2.min_1.js");
-            echo "    ";
-        } else {
-            // asset "da8c7ee"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_da8c7ee") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/da8c7ee.js");
-            echo "    ";
-        }
-        unset($context["asset_url"]);
-        // line 41
-        echo "    ";
-        if (isset($context['assetic']['debug']) && $context['assetic']['debug']) {
-            // asset "e8e0c7f_0"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e8e0c7f_0") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/e8e0c7f_original-scripts_1.js");
-            echo "    ";
-        } else {
-            // asset "e8e0c7f"
-            $context["asset_url"] = isset($context['assetic']['use_controller']) && $context['assetic']['use_controller'] ? $this->env->getExtension('routing')->getPath("_assetic_e8e0c7f") : $this->env->getExtension('assets')->getAssetUrl("_controller/js/e8e0c7f.js");
-            echo "    ";
-        }
-        unset($context["asset_url"]);
     }
 
     public function getTemplateName()
@@ -160,6 +129,6 @@ td { vertical-align: top; padding: 2px 2px;}
 
     public function getDebugInfo()
     {
-        return array (  136 => 41,  124 => 40,  121 => 39,  116 => 43,  114 => 39,  109 => 37,  106 => 36,  101 => 33,  86 => 31,  82 => 30,  75 => 27,  73 => 26,  63 => 19,  58 => 17,  53 => 15,  46 => 13,  37 => 6,  34 => 5,  28 => 3,);
+        return array (  112 => 38,  105 => 36,  100 => 33,  45 => 13,  76 => 27,  65 => 22,  56 => 17,  136 => 40,  123 => 30,  114 => 30,  90 => 45,  85 => 31,  61 => 20,  21 => 1,  36 => 6,  133 => 39,  124 => 41,  111 => 29,  80 => 29,  60 => 16,  52 => 15,  97 => 22,  95 => 47,  88 => 29,  78 => 17,  71 => 14,  25 => 4,  72 => 26,  64 => 24,  53 => 13,  34 => 5,  92 => 20,  86 => 28,  79 => 39,  19 => 2,  42 => 10,  40 => 7,  29 => 3,  26 => 3,  224 => 96,  215 => 90,  211 => 88,  204 => 84,  200 => 83,  195 => 80,  193 => 79,  190 => 78,  188 => 77,  185 => 76,  179 => 72,  177 => 71,  171 => 67,  162 => 63,  158 => 61,  156 => 60,  153 => 59,  146 => 55,  142 => 54,  137 => 51,  126 => 31,  120 => 39,  117 => 44,  103 => 36,  74 => 27,  47 => 13,  32 => 11,  24 => 9,  22 => 3,  23 => 29,  17 => 1,  69 => 20,  63 => 17,  58 => 9,  49 => 11,  43 => 8,  37 => 8,  20 => 2,  139 => 26,  131 => 48,  128 => 43,  125 => 42,  121 => 40,  115 => 39,  107 => 36,  99 => 34,  96 => 34,  91 => 33,  82 => 18,  77 => 25,  75 => 37,  57 => 17,  50 => 14,  46 => 9,  44 => 8,  39 => 10,  33 => 5,  30 => 4,  27 => 3,  135 => 50,  129 => 47,  122 => 46,  116 => 33,  113 => 43,  108 => 37,  104 => 24,  102 => 6,  94 => 33,  89 => 20,  87 => 44,  84 => 31,  81 => 30,  73 => 28,  70 => 24,  67 => 12,  62 => 19,  59 => 19,  55 => 12,  51 => 11,  48 => 10,  41 => 11,  38 => 6,  35 => 5,  31 => 4,  28 => 3,);
     }
 }

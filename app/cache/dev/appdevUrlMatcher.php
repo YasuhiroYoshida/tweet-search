@@ -89,26 +89,6 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Acme\\TweetBundle\\Controller\\DefaultController::indexAction',  '_route' => 'AcmeTweetBundle_homepage',);
         }
 
-        // _assetic_da8c7ee
-        if ($pathinfo === '/js/da8c7ee.js') {
-            return array (  '_controller' => 'assetic.controller:render',  'name' => 'da8c7ee',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_da8c7ee',);
-        }
-
-        // _assetic_da8c7ee_0
-        if ($pathinfo === '/js/da8c7ee_jquery-1.8.2.min_1.js') {
-            return array (  '_controller' => 'assetic.controller:render',  'name' => 'da8c7ee',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_da8c7ee_0',);
-        }
-
-        // _assetic_e8e0c7f
-        if ($pathinfo === '/js/e8e0c7f.js') {
-            return array (  '_controller' => 'assetic.controller:render',  'name' => 'e8e0c7f',  'pos' => NULL,  '_format' => 'js',  '_route' => '_assetic_e8e0c7f',);
-        }
-
-        // _assetic_e8e0c7f_0
-        if ($pathinfo === '/js/e8e0c7f_original-scripts_1.js') {
-            return array (  '_controller' => 'assetic.controller:render',  'name' => 'e8e0c7f',  'pos' => 0,  '_format' => 'js',  '_route' => '_assetic_e8e0c7f_0',);
-        }
-
         // _wdt
         if (preg_match('#^/_wdt/(?P<token>[^/]+?)$#s', $pathinfo, $matches)) {
             return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction',)), array('_route' => '_wdt'));
