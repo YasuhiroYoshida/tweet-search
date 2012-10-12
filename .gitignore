@@ -7,6 +7,7 @@
 
 /app/bootstrap*
 /app/cache/dev/*
+!/app/cache/dev
 /app/logs/*
 
 /vendor/assetic
