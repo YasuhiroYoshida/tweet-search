@@ -46,22 +46,22 @@ td { vertical-align: top; padding: 2px 2px;}
         // line 13
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("AcmeTweetBundle_homepage"), "html", null, true);
         echo "\" method=\"post\" ";
-        echo $this->env->getExtension('form')->renderEnctype($this->getContext($context, "form"));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'enctype');
         echo ">
 
     ";
         // line 15
-        echo $this->env->getExtension('form')->renderErrors($this->getContext($context, "form"));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'errors');
         echo "
 
     ";
         // line 17
-        echo $this->env->getExtension('form')->renderRow($this->getAttribute($this->getContext($context, "form"), "search_word"));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getContext($context, "form"), "search_word"), 'row');
         echo "
 
     ";
         // line 19
-        echo $this->env->getExtension('form')->renderRest($this->getContext($context, "form"));
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'rest');
         echo "
 
     <input type=\"submit\" value=\"Search\" />

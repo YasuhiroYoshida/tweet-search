@@ -3,7 +3,7 @@
 namespace Acme\TweetBundle\Controller;
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use TmhOAuth;
+use Themattharris\TmhOAuth;
 use Acme\TweetBundle\Entity\SearchWord;
 use Acme\TweetBundle\Entity\Makeover;
 use Acme\TweetBundle\Form\Type\TweetSearchType;
@@ -11,6 +11,12 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
+
+  public function __construct() 
+  {
+    // Obtain access to an OAuth 1.0A library written by @themattharris
+ //   require_once "Themattharris/TmhOAuth.php";
+  }
 
   public function indexAction(Request $request)
   {
@@ -32,11 +38,8 @@ class DefaultController extends Controller
 
       if ($form->isValid()) {
         // Obtain access to an OAuth 1.0A library written by @themattharris
-        require_once $this->container->get('kernel')->getRootdir() 
-            . "/../vendor/tmhOAuth/tmhOAuth.php";
-
         // Send a query upon successful authentication 
-        $twitter = new tmhOAuth(array("host" => "search.twitter.com"));
+        $twitter = new TmhOAuth(array("host" => "search.twitter.com"));
         $twitter->request("GET", $twitter->url("search"), 
             array("q" => $form->get('search_word')->getData(),));
       
